@@ -1,0 +1,40 @@
+[Slice, Punish, Havoc, Smash, Decimate, Cleave, Sever, Backhand, Fury, Barge, Dismember, Bladed Dive, Kick, gbarge, gfury, flank backhand, chaos roar,
+Needle Strike, Ricochet, Greater Ricochet, Greater Dazing Shot, Corruption Shot, Fragmentation Shot, Piercing Shot, Binding Shot, Tuska's Wrath, Snipe, Escape, Demoralise,
+Corruption Blast, Combust, Sonic Wave, Wrack, Impact, Wrack and Ruin, Concentrated blast, Greater Concentrated Blast, Greater Chain, Chain, Shock, Dragon Breath, Magma Tempest ]
+
+[Slaughter, Blood Tendrils, Assault, Destroy, Hurricane, Flurry, Greater Flurry, Quake, Forceful backhand, gflurry, cane, sault,
+Snapshot, Rapid Fire, Rout, Bombardment, Salt the Wound, Shadow Tendrils, Tight Bindings, ]
+Wild Magic, Asphyxiate, Deep Impact, Horror, Detonate, Smoke Tendrils]
+
+[Berserk, Meteor Strike,
+Death Swiftness, Incendiary Shot,
+Sunshine, Tsunami]
+
+[Overpower, Omnipower, Deadshot]
+
+[2h Auto]
+
+[Mh Auto]
+
+[Oh Auto]
+
+[Adrenaline Renewal, Adrenaline_Renewal]
+
+[energising]
+
+[jaws1]
+
+[jaws2]
+
+[jaws3]
+
+[jaws4]
+
+[jaws5]
+
+[v2]
+
+
+
+
+
