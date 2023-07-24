@@ -5,11 +5,12 @@ In it's beta, phase. Currently toying around the idea of listing finishing adren
 Version 2.0: (Active Adren Features)
 - Jaws of the Abyss
 - Vestments2
-- Consevation of Energy
+- Conservation of Energy
 - Heightened Senses
 - Energising
 - Igneous
 - Auto Attacks
+- Natural Instinct
 
 Other Features
 - Rotation saved to CSV
