@@ -18,13 +18,15 @@ def CalculateAdren(ability_class_scanner):
         elif ability_class.__contains__ ('Threshold'):
             adren = max(min(adren - 15, max_adren),0)
         elif ability_class.__contains__('Ultimate'):
-            adren = max(min(adren - 80, max_adren), 0)
             if ability_class.__contains__('V2'):
-                adren = max(min(adren + 20, max_adren), 0)
+                adren = max(min(adren - 60, max_adren), 0)
+            else:
+                adren = max(min(adren - 80, max_adren), 0)
         elif ability_class.__contains__('Igneous'):
-            adren = max(min(adren - 40, max_adren), 0)
             if ability_class.__contains__('V2'):
-                adren = max(min(adren + 20, max_adren), 0)
+                adren = max(min(adren - 20, max_adren), 0)
+            else:
+                adren = max(min(adren - 40, max_adren), 0)
         elif ability_class.__contains__('2h_Auto'):
             adren = min(adren + 3, max_adren)
         elif ability_class.__contains__('Mh_Auto'):
@@ -33,18 +35,9 @@ def CalculateAdren(ability_class_scanner):
             adren = min(adren + 1, max_adren)
         elif ability_class.__contains__('Adrenaline_Renewal'):
             adren = min(adren + 40, max_adren)
-        elif ability_class.__contains__('Energising_Slice'):
-            adren = min(adren + 10.4, max_adren)
     print("Remaining Adren: " + str(adren))
     return adren
 
-    # Advanced adren calc method
-    # We take a textfile from YarB and check for Jaws?
-        # Textfile [one list of all the toggles]
-        # [second list of rotation presumably]
-            # Trim out ~, -,
-    # Adren Save (vigour): Conditionals?
-    # Adren generators: FoTs, Natty, Jaws, Divert, Energizing, Inspiration
 def TextReader():
     # Opens up text of abilities
     textfile = open("Ability_class.txt")
@@ -97,7 +90,7 @@ def AcquireRotation():
     rotationText = []
     print("Enter in your rotation, make sure to spell things correctly. Refer to Ability_Class.txt, Type Done or done when you're finished")
     print("Adren rules: Basics 8%, Thresholds -15%, Ultimates -80%, 2h auto 3%, mh 2%, oh 1%, Energising is Rank 4")
-    print("For abilities See Ability_Class.txt. Format for Jaws: Jaws#_Ability, Format for Energising: Energising_Ability. V2 for Vestments2. Order should not matter.")
+    print("See Ability_Class.txt. Format for Jaws: Jaws#_Ability, Format for Energising: Energising_Ability. V2 for Vestments2. Order should not matter.")
     adren = min(max(float(input("Starting adren? ")),0),130)
     max_adren = float(input("Total Adren? "))
     while max_adren < 100 or max_adren > 130 or max_adren < adren:
@@ -110,8 +103,9 @@ def AcquireRotation():
             check = False
         rotationText.append(ability_entry.replace('"', ''))
         counter += 1
-    y = open('C:\\Users\\jjsun\\PycharmProjects\\Runescape\\Rotation.txt', 'w')
+    y = open('C:\\Users\\jjsun\\OneDrive\\Documents\\PycharmProjects\\Runescape\\Rotation.txt', 'w')
     y.write(str(rotationText))
+    print(rotationText)
     y.close()
 
     # Opens rotation, inputs it.
